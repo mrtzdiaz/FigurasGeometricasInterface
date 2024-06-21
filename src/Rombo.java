@@ -1,25 +1,28 @@
 
-public class Rectangulo implements Figuras{
+public class Rombo implements Figuras{
 	String name;
-	double base;
-	double altura;
+	double lado;
+	double diagonalMenor;
+	double diagonalMayor;
 	
-	public Rectangulo(String name, double base, double altura) {
+	public Rombo(String name, double lado, double diagonalMenor, double diagonalMayor) {
+		super();
 		this.name = name;
-		this.base = base;
-		this.altura = altura;
+		this.lado = lado;
+		this.diagonalMenor = diagonalMenor;
+		this.diagonalMayor = diagonalMayor;
 	}
 
 	@Override
 	public double calcularArea() {
 		// TODO Auto-generated method stub
-		return base*altura;
+		return (diagonalMenor * diagonalMayor)/2;
 	}
 
 	@Override
 	public double calcularPerimetro() {
 		// TODO Auto-generated method stub
-		return (base*2) + (altura*2);
+		return lado*4;
 	}
 
 	@Override
@@ -31,8 +34,7 @@ public class Rectangulo implements Figuras{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Calculo Rectangulo";
-		
+		return "Calculo Rombo";
 	}
 	
 	

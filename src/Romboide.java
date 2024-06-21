@@ -1,10 +1,9 @@
-
-public class Rectangulo implements Figuras{
+public class Romboide implements Figuras{
 	String name;
 	double base;
 	double altura;
 	
-	public Rectangulo(String name, double base, double altura) {
+	public Romboide(String name, double base, double altura) {
 		this.name = name;
 		this.base = base;
 		this.altura = altura;
@@ -31,10 +30,7 @@ public class Rectangulo implements Figuras{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Calculo Rectangulo";
+		return "Calculo Romboide";
 		
 	}
-	
-	
-	
 }

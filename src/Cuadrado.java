@@ -1,31 +1,36 @@
-public class Cuadrado implements FiguraGeometrica{
-	private String name;
-	private double lado;
-	public Cuadrado(String name, double lado) {
-		super();
-		this.name = name;
+
+public class Cuadrado implements Figuras{
+	String nombre;
+	double lado;
+	
+	
+	public Cuadrado(String nombre, double lado) {
+		this.nombre = nombre;
 		this.lado = lado;
-	}//constructor
-    public double calcularArea() {
-    	return (getLado() * getLado());
-    }//calcularArea
+	}
+
+	@Override
+	public double calcularArea() {
+		// TODO Auto-generated method stub
+		return lado*lado;
+	}
+
+	@Override
 	public double calcularPerimetro() {
-		return (getLado()*4);
-	}//calcularPerimetro
-	public String getName() {
-		return name;
-	}//setName
-	public void setName(String name) {
-		this.name = name;
-	}//getName
-	public double getLado() {
-		return lado;
-	}//getLado
-	public void setLado(double lado) {
-		this.lado = lado;
-	}//setLado
+		// TODO Auto-generated method stub
+		return lado*4;
+	}
+
+	@Override
+	public String getNombre() {
+		// TODO Auto-generated method stub
+		return nombre;
+	}
+
 	@Override
 	public String toString() {
-		return "Cuadrado [name=" + name + ", lado=" + lado + "]";
-	}//toString
-} //class Cuadrado
+		// TODO Auto-generated method stub
+		return "Calculo de cuadrado";
+	}
+
+}
